@@ -1,0 +1,15 @@
+{
+	"typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+	"typescript.preferences.importModuleSpecifier": "relative",
+	"languageserver": {
+	  "golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+			"filetypes": ["go"],
+			"initializationOptions": {
+			  "usePlaceholders": true
+			}
+		}
+	},
+	"java.jdt.ls.vmargs": "-javaagent:/Users/lw12657/Documents/software/lombok/lombok.jar -Xbootclasspath/a:/Users/lw12657/Documents/software/lombok/lombok.jar"
+}
