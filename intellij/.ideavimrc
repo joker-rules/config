@@ -43,6 +43,12 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 
+" Select entire line, without the new line character
+vnoremap al :<C-U>normal 0v$h<CR>
+nnoremap al :normal val<CR>
+vnoremap il :<C-U>normal ^vg_<CR>
+nnoremap il :normal vil<CR>
+
 " actions
 nnoremap gw :action CloseContent<cr>
 nnoremap <space>Q :action ReopenClosedTab<cr>
